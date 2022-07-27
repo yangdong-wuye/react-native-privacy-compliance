@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="privacy_layout">
+        @layout/privacy_layout
+    </item>
+    <item type="string" name="privacyTitle">
+        @string/privacyTitle
+    </item>
+    <item type="string" name="privacyText">
+        @string/privacyTitle
+    </item>
+    <item type="string" name="registerURL">
+        @string/privacyTitle
+    </item>
+    <item type="string" name="privacyURL">
+        @string/privacyTitle
+    </item>
+    <item type="color" name="privacyPrimaryColor">
+        @color/privacyPrimaryColor
+    </item>
+    <item type="color" name="privacyAccentColor">
+        @color/privacyAccentColor
+    </item>
+    <item type="color" name="privacyDialogBackgroundColor">
+        @color/privacyDialogBackgroundColor
+    </item>
+</resources>

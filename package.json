@@ -1,6 +1,6 @@
 {
-  "name": "react-native-privacy-compliance",
-  "version": "0.1.0",
+  "name": "@wuye/react-native-privacy-compliance",
+  "version": "1.0.0",
   "description": "react-native privacy compliance",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

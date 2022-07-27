@@ -1,4 +1,4 @@
-package com.reactnativeprivacycompliance;
+package co.yangdong.privacy;
 
 import androidx.annotation.NonNull;
 
