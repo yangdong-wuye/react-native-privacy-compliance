@@ -6,9 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.facebook.react.BuildConfig;
-import com.yl.lib.sentry.hook.PrivacySentry;
-
 import co.yangdong.privacy.dialog.PrivacyDialog;
 import co.yangdong.privacy.utils.SharedPrefUtils;
 
@@ -48,9 +45,6 @@ public class PrivacyActivity extends AppCompatActivity {
 
     void onStartMainActivity() {
         setMainActivityClass();
-        if (BuildConfig.DEBUG) {
-            PrivacySentry.Privacy.INSTANCE.updatePrivacyShow();
-        }
         Intent intent = new Intent(this, mainActivityClass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);

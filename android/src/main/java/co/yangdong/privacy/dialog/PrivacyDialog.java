@@ -1,10 +1,12 @@
 package co.yangdong.privacy.dialog;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,6 +59,10 @@ public class PrivacyDialog extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         privacyWebViewDialog = new PrivacyWebViewDialog();
+
+        this.getDialog().setCancelable(false);
+        this.getDialog().setCanceledOnTouchOutside(false);
+        this.getDialog().setOnKeyListener((dialog, keyCode, event) -> keyCode == KeyEvent.KEYCODE_BACK);
 
         View view = inflater.inflate(R.layout.privacy_dialog, container, false);
         TextView titleView = view.findViewById(R.id.dialog_title);
